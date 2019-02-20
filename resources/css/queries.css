@@ -1,0 +1,54 @@
+
+/* ----------- Big tablets ----------- */
+@media only screen and (max-width: 1200px) {
+  .hero-text-box {
+    width: 100%;
+    padding: 0 2%;
+  }
+
+  .row { padding: 0 2%; }
+}
+
+/* ----------- Small to big tablet ----------- */
+@media only screen and (max-width: 1023px) {
+  body { font-size: 18px; }
+  section { padding: 60 px 0; }
+
+  .long-copy {
+    width: 80%;
+    margin-left: 10%;
+  }
+
+  .services-box {
+    width: 100%;
+    margin-left: 0%;
+  }
+}
+
+/* ----------- Small phones to small tablets ----------- */
+@media only screen and (max-width: 767px) {
+  body { font-size: 16px; }
+  section { padding: 30px 0; }
+
+  .row,
+  .hero-text-box { padding: 0 4% }
+  .col { 
+    width: 100%;
+    margin: 0 0 4% 0;
+  }
+  .main-nav { display: none }
+
+  h1 { font-size: 180% }
+  h2 { font-size: 150% }
+
+  .long-copy {
+    width: 100%;
+    margin-left: 0%;
+  }
+
+}
+
+/* ----------- Small phones ----------- */
+@media only screen and (max-width: 480px) {
+  section { padding: 25px 0; }
+}

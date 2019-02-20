@@ -10,13 +10,20 @@
   box-sizing: border-box;
 }
 
-html {
+html,
+body {
   color: #555;
   font-family: 'Lato', 'Arial', sans-serif;
   font-weight: 300;
   font-size: 20px;
   text-rendering: optimizeLegibility;
+  overflow-x: hidden;
 }
+
+/* [class^="flaticon-"]:before, [class*=" flaticon-"]:before, [class^="flaticon-"]:after, [class*=" flaticon-"]:after {
+
+  font-size: 300%;
+} */
 
 /* ------------------- */
 /* REUSABLE COMPONENTS */
@@ -27,16 +34,76 @@ html {
   margin: 0 auto;
 }
 
+section {
+  padding: 80px 0;
+}
+
+.box {
+  padding: 1%;
+}
+
 /* ----HEADINGS---- */
+h1,
+h2,
+h3 {
+  font-weight: 350;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
 h1 {
   margin-top: 0;
   margin-bottom: 20px;
   color: #fff;
   font-size: 240%;
   font-weight: 300;
-  text-transform: uppercase;
-  letter-spacing: 1px;
   word-spacing: 4px;
+}
+
+h2 {
+  font-size: 180%;
+  word-spacing: 2px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+h2:after {
+  display: block;
+  height: 2px;
+  background-color: #e67e22;
+  content: " ";
+  width: 175px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+h3 {
+  font-size: 110%;
+  margin-bottom: 15px;
+}
+
+/* ----PARAGRAPHS---- */
+.long-copy {
+  line-height: 145%;
+  width: 70%;
+  margin-left: 15%;
+}
+
+/* ----ICONS---- */
+/* .flaticon-017-scissors-1:before {
+  font-size: 45px;
+  text-align: center;
+  display: block;
+  color: #e67e22;
+  margin-bottom: 10px;
+} */
+ion-icon {
+  font-size: 165%;
+  transition: color 0.3s;
+}
+
+ion-icon:hover {
+  color: #3B5998;
 }
 
 /* ----BUTTONS---- */
@@ -88,6 +155,7 @@ header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.1), #000), url(img/salon-tools.jpg);
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
   height: 100vh;
 }
 
@@ -131,4 +199,117 @@ header {
 .main-nav li a:hover,
 .main-nav li a:active {
   border-bottom: 2px solid #fff;
+}
+
+/* ------------------- */
+/* ABOUT US */
+/* ------------------- */
+
+.section-about-us {
+  background-color: #fcf2e8;
+}
+
+/* ------------------- */
+/* SERVICES */
+/* ------------------- */
+
+.section-services h3 {
+  font-weight: 350;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.section-services i {
+  text-align: center;
+  color: #e67e22;
+  margin-bottom: 10px;
+}
+
+.services-box {
+  background-color: #f4f4f4;
+  border-radius: 5px;
+  width: 90%;
+  margin-left: 5%;
+  box-shadow: 0 2px 2px #e3e3e3;
+}
+
+.services-box div {
+  padding: 15px;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.services-box ul {
+  list-style: none;
+}
+
+.services-box ul li {
+  padding: 5px 0;
+}
+
+/* ------------------- */
+/* REVIEWS */
+/* ------------------- */
+
+.section-reviews {
+  background-color: #fcf2e8;
+}
+
+/* ------------------- */
+/* CONTACT US */
+/* ------------------- */
+.contact-info {
+  text-align: center;
+}
+
+/* ------------------- */
+/* FOOTER  */
+/* ------------------- */
+
+footer {
+  background-color: #333;
+}
+
+.social-links {
+  list-style: none;
+  float: right;
+}
+
+.social-links li {
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.social-links li a:link,
+.social-links li a:visited {
+  text-decoration: none;
+  border: 0;
+  color: #888;
+  transition: 0.2s;
+}
+
+/* .social-links li a:hover,
+.social-links li a:active {
+  color: #3B5998;
+} */
+
+.icon-credit {
+  list-style: none;
+  border: 0;
+  color: #888;
+}
+
+.icon-credit a:link, 
+.icon-credit a:visited {
+  text-decoration: none;
+}
+
+.section-contact p {
+  text-align: center;
+}
+
+footer p {
+  color: #888;
+  text-align: center;
+  font-size: 80%;
 }
