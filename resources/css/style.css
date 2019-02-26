@@ -341,3 +341,15 @@ footer p {
   text-align: center;
   font-size: 80%;
 }
+
+/* ------------------- */
+/* ANIMATIONS */
+/* ------------------- */
+
+.js--section-services-box1 {
+  opacity: 0;
+}
+
+.js--section-services-box1.animated {
+  opacity: 1;
+}

@@ -21,11 +21,10 @@ $(document).ready(function() {
     $('html, body').animate({scrollTop: $('.js--section-contact').offset().top}, 1000);
   });
 
-});
+  /* Navigation Smooth Scroll */
 
-// Navigation Smooth Scroll
-// Select all links with hashes
-$('a[href*="#"]')
+  // Select all links with hashes
+  $('a[href*="#"]')
   // Remove links that don't actually link to anything
   .not('[href="#"]')
   .not('[href="#0"]')
@@ -60,3 +59,25 @@ $('a[href*="#"]')
       }
     }
   });
+
+  /* Animations on Scroll */
+
+  $('.js--wp-services-row1').waypoint(function(direction) {
+    $('.js--wp-services-row1').addClass('animated fadeInLeft');
+  }, {
+    offset: '90%'
+  });
+
+  $('.js--wp-services-row2').waypoint(function(direction) {
+    $('.js--wp-services-row2').addClass('animated fadeInRight');
+  }, {
+    offset: '90%'
+  });
+
+  $('.js--wp-reviews').waypoint(function(direction) {
+    $('.js--wp-reviews').addClass('animated fadeInUp');
+  }, {
+    offset: '90%'
+  });
+
+});
