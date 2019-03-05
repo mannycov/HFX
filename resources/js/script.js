@@ -22,7 +22,6 @@ $(document).ready(function() {
   });
 
   /* Navigation Smooth Scroll */
-
   // Select all links with hashes
   $('a[href*="#"]')
   // Remove links that don't actually link to anything
@@ -61,7 +60,6 @@ $(document).ready(function() {
   });
 
   /* Animations on Scroll */
-
   $('.js--wp-services-row1').waypoint(function(direction) {
     $('.js--wp-services-row1').addClass('animated fadeInLeft');
   }, {
@@ -93,5 +91,27 @@ $(document).ready(function() {
       icon.attr('name', 'menu')
     }
   });
+
+  /* Image Slider */
+  $('.next').click(function() {
+    var currentImg = $('.active');
+    var nextImg = currentImg.next();
+
+    if (nextImg.length) {
+      currentImg.removeClass('active').css('z-index', -10);
+      nextImg.addClass('active').css('z-index', 10);
+    }
+  });
+
+  $('.prev').click(function() {
+    var currentImg = $('.active');
+    var prevImg = currentImg.prev();
+
+    if (prevImg.length) {
+      currentImg.removeClass('active').css('z-index', -10);
+      prevImg.addClass('active').css('z-index', 10);
+    }
+  })
+  
 
 });

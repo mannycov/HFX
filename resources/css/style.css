@@ -250,6 +250,58 @@ header {
 }
 
 /* ------------------- */
+/* IMAGE SLIDER */
+/* ------------------- */
+/* .row {
+  max-width: 1140px;
+  margin: 0 auto;
+} */
+#slideshow.section {
+  width: 540px;
+  margin: 40px auto;
+  overflow: auto;
+}
+
+.slider-inner {
+  width: 2048px;
+  height: 1152px;
+  position: relative;
+  overflow: hidden;
+  float: left;
+  padding: 3px;
+  border:#666 solid 1px;
+}
+
+.slider-inner img {
+  display: none;
+  width: 2048px;
+  height: 1152px;
+}
+
+.slider-inner img.active {
+  display: inline-block;
+}
+
+.prev, .next {
+  /* margin-top: 130px; */
+  cursor: pointer;
+}
+
+.prev {
+  float: left;
+  position: relative;
+  margin-right: -45px;
+  z-index: 100;
+}
+
+.next {
+  float: right;
+  position: relative;
+  /* margin-left: -45px; */
+  z-index: 100;
+}
+
+/* ------------------- */
 /* SERVICES */
 /* ------------------- */
 
