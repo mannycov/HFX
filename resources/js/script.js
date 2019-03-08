@@ -111,7 +111,7 @@ $(document).ready(function() {
       currentImg.removeClass('active').css('z-index', -10);
       prevImg.addClass('active').css('z-index', 10);
     }
-  })
+  });
   
 
 });
