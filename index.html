@@ -26,12 +26,13 @@
     
   </head>
   <body>
-    <header>
+    <header id="home">
       <nav>
         <div class="row">
-          <img class="logo" src="resources/css/img/hfx.jpg" alt=j"hfx logo" class="logo">
+          <img class="main-logo" src="resources/css/img/Ricardo.jpg" alt="Ricardo logo">
+          <img class="sticky-logo" src="resources/css/img/hfx.jpg" alt="hfx logo">
           <ul class="main-nav js--main-nav">
-            <li><a href="#">Home</a></li>
+            <li><a href="#home">Home</a></li>
             <li><a href="#about-us">About Us</a></li>
             <li><a href="#services">Services</a></li>
             <li><a href="#reviews">Reviews</a></li>
@@ -65,7 +66,7 @@
     <!-- Studio -->
     <section class="section-studio-showcase js--section-studio" id="studio">
 
-      <ul class="studio-showcase">
+      <ul class="studio-showcase clearfix">
         <li>
           <figure class="studio-photo">
             <img src="/resources/css/img/studio1.jpg" alt="studio1">
@@ -81,14 +82,14 @@
             <img src="/resources/css/img/studio3.jpg" alt="studio3">
           </figure>
         </li>
-        <li>
-          <figure class="studio-photo">
-            <img src="/resources/css/img/studio4.jpeg" alt="studio4">
-          </figure>
-        </li>
       </ul>
 
-      <ul class="studio-showcase">
+      <ul class="studio-showcase clearfix">
+        <li>
+            <figure class="studio-photo">
+              <img src="/resources/css/img/studio4.jpeg" alt="studio4">
+            </figure>
+          </li>
         <li>
           <figure class="studio-photo">
             <img src="/resources/css/img/studio5.jpeg" alt="studio5">
@@ -96,17 +97,7 @@
         </li>
         <li>
           <figure class="studio-photo">
-            <img src="/resources/css/img/studio6.jpeg" alt="studio6">
-          </figure>
-        </li>
-        <li>
-          <figure class="studio-photo">
             <img src="/resources/css/img/studio7.jpeg" alt="studio7">
-          </figure>
-        </li>
-        <li>
-          <figure class="studio-photo">
-            <img src="/resources/css/img/studio8.jpeg" alt="studio8">
           </figure>
         </li>
       </ul>
@@ -128,7 +119,7 @@
             </div>
             <div>
               <ul>
-                <li>Signature Cut - $45 - $60</li>
+                <li>Signature Cut</li>
                 <li>Includes shampoo with blow dry</li>
                 <li>Scalp Treatment & Head Massage</li>
                 <li>Specialized Hair Treatment</li>
@@ -145,7 +136,7 @@
             </div>
             <div>
               <ul>
-                <li>Signature Cut - $40</li>
+                <li>Signature Cut</li>
                 <li>Head Shave</li>
                 <li>Neck Trim</li>
                 <li>Beard & Mustache Trim</li>
@@ -248,6 +239,7 @@
     <script type="text/javascript">
       const copyright = `Copyright &copy;${new Date().getFullYear()} Hair Effects by Ricardo`;
       document.getElementById("copyright").innerHTML = copyright</script>
+
     <script src="https://unpkg.com/ionicons@4.4.4/dist/ionicons.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>

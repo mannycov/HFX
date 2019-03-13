@@ -21,6 +21,15 @@ body {
   overflow-x: hidden;
 }
 
+.clearfix {zoom: 1}
+.clearfix:after {
+  content: '.';
+  clear: both;
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+
 /* ------------------- */
 /* REUSABLE COMPONENTS */
 /* ------------------- */
@@ -87,7 +96,7 @@ h3 {
 
 /* ----ICONS---- */
 ion-icon {
-  font-size: 165%;
+  font-size: 200%;
   -webkit-transition: color 0.3s;
   transition: color 0.3s;
 }
@@ -160,12 +169,14 @@ header {
           transform: translate(-50%, -50%);
 }
 
-.logo {
+.main-logo {
   height: 100px;
   width: auto;
   float: left;
   margin-top: 20px;
 }
+
+.sticky-logo { display: none; }
 
 /* Main Nav */
 .main-nav {
@@ -216,17 +227,33 @@ header {
   left: 0;
   width: 100%;
   background-color: rgba(255, 255, 255, 0.98);
+  box-shadow: 0 2px 2px #efefef;
   -webkit-box-shadow: 0 2px 2px #efefef;
           box-shadow: 0 2px 2px #efefef;
   z-index: 9999;
 }
 
-.sticky main-nav { margin-top: 18px; }
+.sticky .main-nav { margin-top: 40px; }
 
 .sticky .main-nav li a:link,
 .sticky .main-nav li a:visited {
   padding: 16px 0;
   color: #555;
+}
+
+.sticky .main-nav li a:hover,
+.sticky .main-nav li a:active {
+  border-bottom: 2px solid #e67e22;
+}
+
+.sticky .main-logo { display: none; }
+
+.sticky .sticky-logo {
+  display: block;
+  height: 75px;
+  width: auto;
+  float: left;
+  margin: 3px;
 }
 
 /* ------------------- */
@@ -253,7 +280,7 @@ header {
 .studio-showcase li {
   display: block;
   float: left;
-  width: 25%;
+  width: 33.33%;
 }
 
 .studio-photo {
@@ -337,8 +364,8 @@ header {
 
 .map {
   display: block;
-  width: 80%;
-  height: 600px;
+  width: 65%;
+  height: 500px;
   margin: 30px auto;
 }
 
@@ -394,4 +421,4 @@ footer p {
 .js--wp-services-row2.animated,
 .js--wp-reviews.animated {
   opacity: 1;
-}
+}d

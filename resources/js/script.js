@@ -6,7 +6,6 @@ $(document).ready(function() {
       $('nav').addClass('sticky');
     } else {
       $('nav').removeClass('sticky');
-      $('.logo').remove();
     }
   }, {
     offset: '60px;'
@@ -63,19 +62,19 @@ $(document).ready(function() {
   $('.js--wp-services-row1').waypoint(function(direction) {
     $('.js--wp-services-row1').addClass('animated fadeInLeft');
   }, {
-    offset: '90%'
+    offset: '85%'
   });
 
   $('.js--wp-services-row2').waypoint(function(direction) {
     $('.js--wp-services-row2').addClass('animated fadeInRight');
   }, {
-    offset: '90%'
+    offset: '85%'
   });
 
   $('.js--wp-reviews').waypoint(function(direction) {
     $('.js--wp-reviews').addClass('animated fadeInUp');
   }, {
-    offset: '90%'
+    offset: '85%'
   });
 
   /* Mobile Nav */
@@ -91,27 +90,4 @@ $(document).ready(function() {
       icon.attr('name', 'menu')
     }
   });
-
-  /* Image Slider */
-  $('.next').click(function() {
-    var currentImg = $('.active');
-    var nextImg = currentImg.next();
-
-    if (nextImg.length) {
-      currentImg.removeClass('active').css('z-index', -10);
-      nextImg.addClass('active').css('z-index', 10);
-    }
-  });
-
-  $('.prev').click(function() {
-    var currentImg = $('.active');
-    var prevImg = currentImg.prev();
-
-    if (prevImg.length) {
-      currentImg.removeClass('active').css('z-index', -10);
-      prevImg.addClass('active').css('z-index', 10);
-    }
-  });
-  
-
 });
