@@ -152,8 +152,8 @@ ion-icon:hover {
 /* ------------------- */
 
 header {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.1)), to(#000)), url(img/salon-tools.jpg);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.1), #000), url(img/salon-tools.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.1)), to(#000)), url(img/salon-tools-min.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), #000), url(img/salon-tools-min.jpg);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
