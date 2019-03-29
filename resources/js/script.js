@@ -62,13 +62,13 @@ $(document).ready(function() {
   $('.js--wp-services-row1').waypoint(function(direction) {
     $('.js--wp-services-row1').addClass('animated fadeInLeft');
   }, {
-    offset: '85%'
+    offset: '95%'
   });
 
   $('.js--wp-services-row2').waypoint(function(direction) {
     $('.js--wp-services-row2').addClass('animated fadeInRight');
   }, {
-    offset: '85%'
+    offset: '95%'
   });
 
   $('.js--wp-reviews').waypoint(function(direction) {
