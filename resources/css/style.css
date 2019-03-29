@@ -236,7 +236,7 @@ header {
 
 .sticky .main-nav li a:hover,
 .sticky .main-nav li a:active {
-  border-bottom: 2px solid #e67e22;
+  border-bottom: 2px solid #e74c3c;
 }
 
 .sticky .main-logo { display: none; }
