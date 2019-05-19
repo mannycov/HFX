@@ -380,12 +380,12 @@ header {
   background-attachment: fixed;
 }
 
-.yelp-review {
+/* .yelp-review {
   display: block;
   width: 100%;
-  /* height: auto !important; */
+  height: auto !important;
   overflow: auto;
-}
+} */
 
 /* ------------------- */
 /* GOOGLE MAP */

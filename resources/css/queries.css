@@ -19,7 +19,6 @@
     margin: auto;
     overflow: hidden;
   }
-
 }
 
 /* ----------- Small to big tablet ----------- */
@@ -40,13 +39,6 @@
   .services-box {
     width: 100%;
     margin-left: 0%;
-  }
-
-  .yelp-review { 
-    max-width: 50% !important;
-    height: auto;
-    margin: auto;
-    overflow: hidden;
   }
 }
 
@@ -143,15 +135,6 @@
     margin: auto;
     height: auto;
   }
-
-  .yelp-review { 
-    max-width: 75% !important;
-    min-width: 75% !important;
-    height: auto;
-    margin: auto;
-    overflow: hidden;
-  }
-
 }
 
 /* ----------- Small phones ----------- */
@@ -161,10 +144,5 @@
   .about-box:last-child {
     margin-top: 35px;
     padding-left: 3%;
-  }
-
-  .yelp-review {
-    height: auto;
-    overflow: hidden;
   }
 }
