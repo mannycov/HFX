@@ -84,7 +84,6 @@ h2:after {
 
 h3 {
   font-size: 110%;
-  margin-bottom: 15px;
 }
 
 h5 {
@@ -364,6 +363,10 @@ header {
 
 .services-box ul li {
   padding: 5px 0;
+}
+
+.services-box ul li:last-child {
+  padding-bottom: 10px;
 }
 
 /* ------------------- */
