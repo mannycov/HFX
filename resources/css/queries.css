@@ -112,7 +112,10 @@
     color: #555;
   }
 
-  h1 { font-size: 180% }
+  h1 {
+    margin-top: 90px;
+    font-size: 180%
+  }
   h2 { font-size: 150% }
 
   .long-copy {
